@@ -1,6 +1,7 @@
 let back = document.getElementById("Back");
 let version = document.getElementById("version");
 let server = document.getElementById("server");
+let update = document.getElementById("update")
 let vNUM = "devEd id: alpha 0.1"
 let serverState = false;
 
@@ -21,3 +22,7 @@ function getServerState() {
 
 getVersion();
 getServerState();
+
+update.addEventListener("click",function() {
+    open("https://github.com/Gerygo07/TvMode")
+})
