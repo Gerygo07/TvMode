@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(2, 2, 19);
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#canvas{
+    opacity: 100%;
+    position: relative;
+    right: 0vw;
+    animation-name: loadin;
+    animation-duration: 2s;
+}
+
+@keyframes loadin{
+    0%{
+        opacity: 0%;
+        right: 5vw;
+    }
+    100%{
+        opacity: 100%;
+        right: 0vw;
+    }
+}
+
+#sideRight{
+    position: relative;
+    bottom: 98vh;
+    left: 29vw;
+    width: 70vw;
+    height: 98vh;
+    border-left-width: 0.1vw;
+    border-left-style: solid;
+    border-left-color: white;
+    color: white;
+}
+
+#sideLeft{
+    width: 30vw;
+    height: 98vh;
+}
+
+.option{
+    width: 23vw;
+    height: 6vh;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 3.5vh;
+    outline: none;
+    border: none;
+    border-bottom-width: 0.1vh;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    margin-top: 2vh;
+    position: relative;
+    top: 0vh;
+}
+.option:active{
+    opacity: 80%;
+}
+
+.option:hover{
+    animation-name: onhover;
+    animation-duration: 0.5s;
+    background-color: rgb(54, 54, 54);
+}
+
+@keyframes onhover{
+    0%{background-color: rgb(17, 17, 17)}
+    100%{background-color: rgb(54, 54, 54);}
+}
+
+#allsettings{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    font-size: 3.5vh;
+}
+
+.settingsBtn{
+    width: 10vw;
+    height: 6vh;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 3.5vh;
+    outline: none;
+    border: none;
+    border-bottom-width: 0.1vh;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    margin-top: 2vh;
+
+}
+
+.settingsBtn:hover{
+    animation-name: onhover;
+    animation-duration: 0.5s;
+    background-color: rgb(54, 54, 54);
+}
+
+.settingsBtn:active{
+    opacity: 80%;
+}

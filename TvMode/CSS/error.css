@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(6, 0, 24);
+}
+
+.code{
+    position: relative;
+    top: 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
