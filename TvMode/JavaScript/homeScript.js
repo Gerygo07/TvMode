@@ -4,8 +4,12 @@ let youtube = document.getElementById("YouTube");
 let horizongo = document.getElementById("HorizonGo");
 let searchBar = document.getElementById("searchBar");
 let settings = document.getElementById("settings");
+let vkeyboard = document.getElementById("keyboard");
+let vkey = document.createElement("BUTTON");
+let vkeypos = 0
 
 
+createKeyboard();
 scrollTo(0,0);
 
 eC00();
@@ -41,3 +45,8 @@ searchBar.addEventListener("keyup", function(event) {
 settings.addEventListener('click',function(){
     open('../HTML/Settings.html','_self');
 });
+
+function createKeyboard() {
+    vkeyboard.appendChild(vkey);
+    vkeyboard.appendChild(vkey);
+}

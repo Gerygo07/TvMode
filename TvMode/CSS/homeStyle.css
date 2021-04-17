@@ -119,3 +119,15 @@ body{
     background-size: contain;
     background-color: white;
 }
+
+#keyboard{
+    background-color: rgb(17, 17, 17);
+    position: relative;
+    top: 10vh;
+    left: 2.8vw;
+    width: 23vw;
+    height: 50vh;
+    border-bottom-width: 0.1vh;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}

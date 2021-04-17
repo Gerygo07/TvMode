@@ -24,5 +24,5 @@ getVersion();
 getServerState();
 
 update.addEventListener("click",function() {
-    open("https://github.com/Gerygo07/TvMode")
+    open("https://github.com/Gerygo07/TvMode");
 })
