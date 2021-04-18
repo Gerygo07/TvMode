@@ -126,8 +126,61 @@ body{
     top: 10vh;
     left: 2.8vw;
     width: 23vw;
-    height: 50vh;
+    height: 0vh;
     border-bottom-width: 0.1vh;
     border-bottom-style: solid;
     border-bottom-color: white;
+    animation-name: boardAnim;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+#keys{
+    opacity: 0%;
+    animation-name: keysAnim;
+    animation-duration: 2s;
+    animation-delay: 4s;
+}
+
+.keyboardBtn{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2vh;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-size: 2.5vh;
+    outline: none;
+    border: none;
+    border-bottom-width: 0.1vh;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    margin-top: 10px;
+}
+
+.keyboardBtn:active{
+    color: black;
+    border-bottom-color: black;
+}
+
+.keyboardBtn:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+@keyframes boardAnim{
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 40vh;
+    }
+}
+
+@keyframes keysAnim{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
