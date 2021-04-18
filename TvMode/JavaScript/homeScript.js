@@ -8,7 +8,7 @@ let keyboard = document.getElementById("keyboard");
 let keys = document.getElementById("keys");
 
 setTimeout(() => {
-    keyboard.style.height = "40vh";
+    keyboard.style.height = "50vh";
 }, 3000);
 setTimeout(() => {
     keys.style.opacity = 1;
